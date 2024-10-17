@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Waste Management</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Reset default margins and paddings */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6; /* Background color */
+        }
+
+        header {
+            width: 100%;
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #28a745;
+        }
+
+        .contact-form {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            margin: 20px auto; /* Centering the form with top and bottom margin */
+        }
+
+        .contact-form h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-control {
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: border 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: none;
+        }
+
+        .send-btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background-color: #218838;
+        }
+
+        .contact-banner {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .contact-banner img {
+            width: 200px;
+            height: auto;
+        }
+
+        .contact-form p {
+            text-align: center;
+        }
+
+        .contact-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <!-- Contact banner -->
+        <div class="contact-banner">
+            <img src="images/contact-us.webp" alt="Contact Us">
+        </div>
+       
+        
+        <form>
+            <!-- Name Input -->
+            <div class="form-group">
+                <i class="fas fa-user form-icon"></i>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <i class="fas fa-envelope form-icon"></i>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Message Input -->
+            <div class="form-group">
+                <i class="fas fa-comment form-icon"></i>
+                <textarea class="form-control" id="message" placeholder="Enter your message" required></textarea>
+            </div>
+
+            <!-- Send Message Button -->
+            <button type="submit" class="btn send-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Waste Management. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

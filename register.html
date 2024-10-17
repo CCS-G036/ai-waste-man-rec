@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Waste Management</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Reset margin and padding for body and html */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6; /* Background color */
+        }
+
+        header {
+            width: 100%;
+            background-color: #343a40;
+            padding: 10px 0;
+            margin-bottom: 20px; /* Space below the header */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #28a745;
+        }
+
+        .register-form {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            margin: auto; /* Centering the form */
+        }
+
+        .register-form h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-control {
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: border 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: none;
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 10px;
+            border-radius: 50px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .register-btn:hover {
+            background-color: #218838;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .register-banner {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .register-banner img {
+            width: 200px;
+            height: auto;
+        }
+
+        .register-form p {
+            text-align: center;
+        }
+
+        .register-form a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-form a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px; /* Adding padding to footer */
+            background-color: #f4f7f6; /* Same as body background color */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register-form">
+        <!-- Registration banner -->
+        <div class="register-banner">
+            <img src="images/reg.jpg" alt="Register Image">
+        </div>
+        
+        <h2>Create an Account</h2>
+        
+        <form>
+            <!-- Username Input -->
+            <div class="form-group">
+                <i class="fas fa-user form-icon"></i>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <i class="fas fa-envelope form-icon"></i>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <i class="fas fa-lock form-icon"></i>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Register Button -->
+            <button type="submit" class="btn register-btn">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </section>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <footer>
+        <p>&copy; 2024 Waste Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>

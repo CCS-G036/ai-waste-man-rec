@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management - Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eaeaea; /* A soft background color */
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: black; /* Primary color */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            justify-content: space-between;
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107; /* Gold color on hover */
+        }
+
+        .hero {
+            background-image: url('images/waste-management-hero.webp'); /* Hero image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            margin-bottom: 20px;
+            filter: brightness(0.7); /* Darken the background */
+        }
+
+        .hero h1 {
+            font-size: 3.5rem; /* Increased font size for more impact */
+            margin: 0;
+            color: #ffffff; /* White color for better contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+        }
+
+        .hero p {
+            font-size: 1.5rem; /* Slightly increased font size */
+            margin-top: 10px;
+            color: #ffffff; /* Gold color for a vibrant look */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
+        }
+
+        .services {
+            padding: 40px 20px;
+        }
+
+        .service-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            background-color: white; /* White background for cards */
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #007bff; /* Primary color for footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Waste Management</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+        </div>
+    </section>
+
+    <section class="services container">
+        <h2 class="text-center">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="images/recycling.png" alt="Recycling Services" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Recycling Services</h5>
+                        <p class="card-text">We offer comprehensive recycling programs to help reduce waste and promote sustainability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="images/waste-pickup.jpg" alt="Waste Pickup Services" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Waste Pickup</h5>
+                        <p class="card-text">Reliable and efficient waste pickup services tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="images/consulting.jpg" alt="Waste Management Consulting" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Consulting Services</h5>
+                        <p class="card-text">Expert consulting to optimize your waste management practices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Waste Management. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
